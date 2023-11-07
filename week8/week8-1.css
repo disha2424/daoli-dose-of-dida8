@@ -1,0 +1,165 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sarala:wght@700&display=swap');
+
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+
+#logo-image {
+  width: 1200px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  transition: transform 0.2s ease;
+}
+
+#logo-image:hover {
+  transform: scale(1.1);
+}
+
+.space{
+  margin: 1000px;
+}
+h1{
+  color: deeppink;
+  font-family: 'Bungee', sans-serif;
+  font-size:50px ;
+
+
+}
+
+h2{
+  font-family: 'Red Hat Display', sans-serif;
+  font-size: 30px;
+}
+
+p{
+  font-family: 'Red Hat Display', sans-serif;
+  font-size: 20px;
+}
+
+ body {
+            margin: 0;
+            
+             background-color: rgb(255,110, 0);
+        }
+
+     
+
+        #falling-button {
+          width: 350px;
+          height: 90px;
+            margin: 20px;
+            padding: 10px 20px;
+            background-color: black;
+            color: white;
+            border: deeppink solid 7px;
+            cursor: pointer;
+              font-family: 'Bungee', sans-serif;
+            font-size: 30px;
+              
+        }
+
+        .falling-image {
+            width: 200px;
+            height: auto;
+            position: absolute;
+            animation: fall 2s linear;
+           
+        }
+
+        .falling-image:nth-child(odd) {
+            animation-duration: 3s; 
+        }
+
+        @keyframes fall {
+            from {
+                transform: translateY(-100px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(100vh);
+                opacity: 1;
+            }
+        }
+
+         .image-grid {
+            display: grid;
+            grid-template-columns: repeat(7, 1fr); /* Create 7 equal-width columns */
+            gap: 10px; /* Adjust the gap between images as needed */
+        }
+
+        .image {
+            width: 100%; /* Ensure the image takes the full width of its container */
+            height: auto; /* Maintain the aspect ratio */
+}
+
+
+
+   .container1 {
+display: block;
+float: left;
+margin-left: 110px;
+margin-bottom: 70px;
+
+            width: 300px;
+            background-color: white;
+            border: 1px solid #ddd;
+            padding: 10px;
+            
+        }
+
+        /* Style for the image */
+        .image1 {
+            display: block;
+            margin: 0 auto;
+            max-width: 100%;
+        }
+
+        /* Style for the written content */
+        .content1 {
+            text-align: center;
+            margin-top: 10px;
+        }
+
+
+.rectangle {
+    width: 400px;
+    height: 170px;
+    background-color: black;
+    border: 10px solid deeppink;
+    border-radius: 10px;
+    position: absolute;
+    display: none;
+}
+
+.rectangle-text {
+    padding: 35px;
+    color: deeppink;
+    font-family: 'Sarala', sans-serif;
+    font-size: 30px;
+
+}
+
+.open-rectangle {
+    margin-top: 10px;
+}
+
+h5{
+  font-family: 'Anton', sans-serif;
+  font-size: 30px;
+  margin-bottom: -10px;
+  margin-top: -10px;
+
+}
+
+.button1-text{
+  margin: 55px;
+}
+
